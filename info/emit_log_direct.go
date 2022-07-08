@@ -30,13 +30,13 @@ func main() {
 	id := rand.Intn(10)
 	fmt.Println(id)
 	err = ch.ExchangeDeclare(
-		"logs_direct", // name
-		"direct",      // type
-		true,          // durable
-		false,         // auto-deleted
-		false,         // internal
-		false,         // no-wait
-		nil,           // arguments
+		"logger", // name
+		"direct", // type
+		true,     // durable
+		false,    // auto-deleted
+		false,    // internal
+		false,    // no-wait
+		nil,      // arguments
 	)
 	failOnError(err, "Failed to declare an exchange")
 
