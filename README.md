@@ -27,12 +27,12 @@ $ curl -L https://github.com/golang-migrate/migrate/releases/download/$version/m
 ### Executing program
 
 1. Run docker-compose 
-   ```sh
+   ```js
   docker-compose up
    ```
 2. Create database rabbitmq_task through docker
    ```bash
-  create database rabbitmq_task;
+  create database rabbitmq_task
    ```
 3. Migrate sql dependencies
    ```bash
